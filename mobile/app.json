@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "RemoteChat AI",
+    "slug": "remotechat-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "remotechat",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#09090B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ai.remotechat.mobile"
+    },
+    "android": {
+      "package": "ai.remotechat.mobile",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#09090B"
+      }
+    },
+    "plugins": ["expo-router"]
+  }
+}

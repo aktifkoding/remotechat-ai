@@ -1,0 +1,30 @@
+# Dependencies & Build Outputs
+node_modules
+.next
+out
+dist
+coverage
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment & Local Encrypted State
+.env
+.env.local
+.env.*.local
+.remotechat-data
+
+# Mobile (Expo / Android / iOS)
+mobile/node_modules
+mobile/.expo
+mobile/dist
+mobile/android/.gradle
+mobile/android/build
+mobile/android/app/build
+mobile/android/local.properties
+mobile/ios/Pods
+mobile/ios/build
+*.jks
+*.keystore
+*.apk
+*.aab
