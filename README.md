@@ -66,12 +66,23 @@ RemoteChat AI is a cloud-based AI software development platform with multi-agent
 ```bash
 pnpm install
 cp .env.example .env.local
+```
+
+Generate a real encryption key and set `ENCRYPTION_MASTER_KEY` in `.env.local` (never commit this file). If the key changes later, already-saved credentials must be re-entered.
+
+```bash
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+```
+
+```bash
 pnpm dev
 ```
 
 Open `http://localhost:3000` in your browser.
 
-For production mode:
+`dev` and `start` bind to `127.0.0.1` by default, so the unauthenticated API is not reachable from your LAN. To use the mobile app on the same Wi-Fi, opt in explicitly with `pnpm dev:lan` or `pnpm start:lan` — use trusted networks only.
+
+For a built run:
 
 ```bash
 pnpm build
