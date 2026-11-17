@@ -1,7 +1,19 @@
 {
-  "name": "remotechat-ai",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@aktifkoding/remotechat-ai",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aktifkoding/remotechat-ai.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "src",
+    "remotechat",
+    "README.md",
+    "package.json"
+  ],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
